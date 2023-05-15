@@ -1,0 +1,20 @@
+# Features required
+include_features:
+  - price
+  - num_subscribers
+  - avg_rating
+  - num_lectures
+  - content_length_min
+  - instructor_name
+
+# Clean up parameters:
+# include values more than indicated
+clean_up:
+  price: 10
+  num_subscribers: 0
+
+
+# Categorical count vizualization
+# visualization only includes indicated here
+categorical_count_visualization:
+  - category
