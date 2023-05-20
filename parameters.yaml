@@ -29,5 +29,39 @@ cleanup_parameters:
 
 # Categorical count vizualization
 # visualization only includes indicated here
-# categorical_count_visualization:
-#   - category
+categorical_count_visualization_parameters:
+  - town
+  - flat_type
+  - storey_range
+  - flat_model
+
+numerical_vs_categorical_eda_visualization_parameters:
+  # resale_price: town
+  resale_price: flat_type
+  # resale_price: storey_range
+  resale_price: flat_model
+  remaining_lease: town
+  remaining_lease: flat_model
+  floor_area_sqm: flat_type
+
+linear_regression_parameters:
+
+  - response: resale_price
+    predictors: 
+      - floor_area_sqm
+      - remaining_lease
+
+
+  # - response: resale_price
+  #   predictors: 
+  #     - flat_type
+  #     - flat_model
+
+  # - response: remaining_lease
+  #   predictors:
+  #     - town
+  #     - flat_model 
+  
+  # - response: floor_area_sqm
+  #   predictors:
+  #     - flat_type
