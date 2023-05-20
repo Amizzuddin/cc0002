@@ -1,28 +1,33 @@
-# Dataset to  load
 load_dataset_parameters:
   dataset_location: dataset
   datasets_to_load:
     - resale-flat-prices-based-on-registration-date-from-jan-2017-onwards
-    # - resale-flat-prices-based-on-registration-date-from-jan-2015-to-dec-2016
+    - resale-flat-prices-based-on-registration-date-from-jan-2015-to-dec-2016
 
 
-# Features required
-include_features:
-  - price
-  - num_subscribers
-  - avg_rating
-  - num_lectures
-  - content_length_min
-  - instructor_name
+cleanup_parameters:
+  include_features:
+    - town
+    - flat_type
+    - storey_range
+    - floor_area_sqm
+    - flat_model
+    - remaining_lease
+    - resale_price
+  
+  # remaining_lease has 2 format which are 'YY years XX months' or 'XX' years
+  # will focus on years instead
+  morph_feature_type:
+    remaining_lease: int64 # mixed of string and int type
 
 # Clean up parameters:
 # include values more than indicated
-clean_up:
-  price: 10
-  num_subscribers: 0
+# clean_up:
+#   price: 10
+#   num_subscribers: 0
 
 
 # Categorical count vizualization
 # visualization only includes indicated here
-categorical_count_visualization:
-  - category
+# categorical_count_visualization:
+#   - category

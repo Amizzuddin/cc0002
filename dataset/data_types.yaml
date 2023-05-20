@@ -9,4 +9,5 @@ data_types:
   floor_area_sqm: int64 # Unit Of Measure: 'Sqm'
   flat_model: category
   lease_commence_date: int64 # Format: 'YYYY'
+  remaining_lease: string # Format: 'YY years XX months' or 'XX' years
   resale_price: int64 # Unit Of Measure: 'S$'
