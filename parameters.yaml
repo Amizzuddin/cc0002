@@ -1,3 +1,11 @@
+# Dataset to  load
+load_dataset_parameters:
+  dataset_location: dataset
+  datasets_to_load:
+    - resale-flat-prices-based-on-registration-date-from-jan-2017-onwards
+    # - resale-flat-prices-based-on-registration-date-from-jan-2015-to-dec-2016
+
+
 # Features required
 include_features:
   - price

@@ -2,5 +2,3 @@ typing
 pyyaml
 importnb
 dython
-kmodes
-tqdm

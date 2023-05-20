@@ -1,0 +1,12 @@
+# Dataset column data types
+data_types:
+  month: datetime # Format: 'YYYY-MM'
+  town: category
+  flat_type: category
+  block: string
+  street_name: string
+  storey_range: category
+  floor_area_sqm: int64 # Unit Of Measure: 'Sqm'
+  flat_model: category
+  lease_commence_date: int64 # Format: 'YYYY'
+  resale_price: int64 # Unit Of Measure: 'S$'
