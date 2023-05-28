@@ -43,6 +43,16 @@ numerical_vs_categorical_eda_visualization_parameters:
   remaining_lease: flat_model
   floor_area_sqm: flat_type
 
+time_series_parameters:
+  - y_axis: resale_price
+    grouby: town 
+    type: 
+    - min
+    - mean
+    - max
+
+
+
 linear_regression_parameters:
 
   - response: resale_price
