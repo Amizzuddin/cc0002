@@ -7,6 +7,7 @@ load_dataset_parameters:
 
 cleanup_parameters:
   include_features:
+    - month
     - town
     - flat_type
     - storey_range
@@ -20,12 +21,6 @@ cleanup_parameters:
   morph_feature_type:
     remaining_lease: int64 # mixed of string and int type
 
-# Clean up parameters:
-# include values more than indicated
-# clean_up:
-#   price: 10
-#   num_subscribers: 0
-
 
 # Categorical count vizualization
 # visualization only includes indicated here
@@ -34,6 +29,10 @@ categorical_count_visualization_parameters:
   - flat_type
   - storey_range
   - flat_model
+
+numerical_and_categorical_heatmap_parameters:
+  features_to_exclude:
+    - 
 
 numerical_vs_categorical_eda_visualization_parameters:
   # resale_price: town
