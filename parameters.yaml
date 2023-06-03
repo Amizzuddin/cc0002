@@ -30,6 +30,7 @@ categorical_count_visualization_parameters:
   - storey_range
   - flat_model
 
+# TODO check if this still need
 numerical_and_categorical_heatmap_parameters:
   features_to_exclude:
     - 
