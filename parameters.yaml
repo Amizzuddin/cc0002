@@ -26,10 +26,9 @@ cleanup_parameters:
         derived_features:
           - resale_price
           - floor_area_sqm
+          # - remaining_lease
         action_type: division
         data_type: int
-
-
 
 
 # Categorical count vizualization
@@ -40,10 +39,6 @@ categorical_count_visualization_parameters:
   - storey_range
   - flat_model
 
-# TODO check if this still need
-numerical_and_categorical_heatmap_parameters:
-  features_to_exclude:
-    - 
 
 numerical_vs_categorical_eda_visualization_parameters:
   # resale_price: town
@@ -54,6 +49,7 @@ numerical_vs_categorical_eda_visualization_parameters:
   remaining_lease: flat_model
   floor_area_sqm: flat_type
 
+
 # time_feature has to be datetime64[ns] only
 # observe_feature has to be numerical only
 # groupby_feature has be categorical only
@@ -63,7 +59,7 @@ time_series_parameters:
 
   # groupby for resale price has to be based on multi column cause the price of the house are different based on square_rm
   - time_feature: month
-    observe_feature: resale_price
+    observe_feature: price_per_sqm
     groupby_features:
       - town
     observation_types: 
@@ -71,6 +67,7 @@ time_series_parameters:
       mean: blue
       max: green
 
+  # currently does not support multi groupby features
   # - time_feature: month 
   #   observe_feature: floor_area_sqm
   #   groupby_features: 
@@ -80,7 +77,6 @@ time_series_parameters:
   #     min: red
   #     mean: blue
   #     max: green
-
 
 
 linear_regression_parameters:
