@@ -44,13 +44,30 @@ numerical_vs_categorical_eda_visualization_parameters:
   remaining_lease: flat_model
   floor_area_sqm: flat_type
 
+# time_feature has to be datetime64[ns] only
+# observe_feature has to be numerical only
+# groupby_feature has be categorical only
+# supported observation_type are sum, mean, median, min, and max
 time_series_parameters:
-  - y_axis: resale_price
-    grouby: town 
-    type: 
-    - min
-    - mean
-    - max
+  - time_feature: month
+    observe_feature: resale_price
+    groupby_features:
+      - town
+    # need to add color feature
+    observation_types: 
+      min: red
+      mean: blue
+      max: green
+  
+  # floor_area_sqm observation must be based on the flat_type
+  # - observe_value: floor_area_sqm
+  #   groupby: 
+  #     - town
+  #     - flat_type
+  #   observation_type: 
+  #   - min
+  #   - mean
+  #   - max
 
 
 
