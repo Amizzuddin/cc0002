@@ -20,6 +20,16 @@ cleanup_parameters:
   # will focus on years instead
   morph_feature_type:
     remaining_lease: int64 # mixed of string and int type
+  
+  custom_numerical_features:
+    - price_per_sqm: 
+        derived_features:
+          - resale_price
+          - floor_area_sqm
+        action_type: division
+        data_type: int
+
+
 
 
 # Categorical count vizualization
@@ -47,27 +57,29 @@ numerical_vs_categorical_eda_visualization_parameters:
 # time_feature has to be datetime64[ns] only
 # observe_feature has to be numerical only
 # groupby_feature has be categorical only
-# supported observation_type are sum, mean, median, min, and max
+# supported observation_type are sum, mean, median, min, and max and 
+# observation_type format -> statistical_type: color representation
 time_series_parameters:
+
+  # groupby for resale price has to be based on multi column cause the price of the house are different based on square_rm
   - time_feature: month
     observe_feature: resale_price
     groupby_features:
       - town
-    # need to add color feature
     observation_types: 
       min: red
       mean: blue
       max: green
-  
-  # floor_area_sqm observation must be based on the flat_type
-  # - observe_value: floor_area_sqm
-  #   groupby: 
+
+  # - time_feature: month 
+  #   observe_feature: floor_area_sqm
+  #   groupby_features: 
   #     - town
   #     - flat_type
-  #   observation_type: 
-  #   - min
-  #   - mean
-  #   - max
+  #   observation_types: 
+  #     min: red
+  #     mean: blue
+  #     max: green
 
 
 
