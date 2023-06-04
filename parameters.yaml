@@ -82,14 +82,20 @@ time_series_parameters:
 # TODO do we need to add train:test ratio?
 # consider add one hotencoding
 # if there is catergorical, the approach will be based per
-linear_regression_parameters:
+time_series_linear_regression_parameters:
 
-  - response: resale_price
-    predictors: 
-      - floor_area_sqm
-      - price_per_sqm
+  - response: price_per_sqm
+    predictors: month
     groupby_features:
       - town
+    observation_type: mean
+
+  # - response: resale_price
+  #   predictors: 
+  #     - floor_area_sqm
+  #     - price_per_sqm
+  #   groupby_features:
+  #     - town
 
   # - response: resale_price
   #   predictors: 

@@ -7,3 +7,8 @@ For March 2012 onwards, the data is based on date of registration for the resale
 
 # FOCUS
 regression model
+
+
+### TODO: 
+- add generic parsing function for easier future code referrence
+- add data types for easier parsing
