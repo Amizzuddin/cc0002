@@ -79,13 +79,23 @@ time_series_parameters:
   #     max: green
 
 
+# TODO do we need to add train:test ratio?
+# consider add one hotencoding
+# if there is catergorical, the approach will be based per
 linear_regression_parameters:
 
   - response: resale_price
     predictors: 
       - floor_area_sqm
-      - remaining_lease
+      - price_per_sqm
+    groupby_features:
+      - town
 
+  # - response: resale_price
+  #   predictors: 
+  #     - floor_area_sqm
+  #     - price_per_sqm
+  #     - flat_type
 
   # - response: resale_price
   #   predictors: 
