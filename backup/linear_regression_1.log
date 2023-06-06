@@ -1,0 +1,133 @@
+input parameters: [{'response': 'price_per_sqm', 'predictors': 'month', 'groupby_features': ['town'], 'observation_type': 'mean'}]
+response: price_per_sqm, predictors_feature: month, linear_regression_model_features: ['month', 'price_per_sqm', 'town'], groupby_features: ['town'], observation_type: mean
+grouped_dataframed columns: Index(['month', 'town', 'mean'], dtype='object')
+Linear regression for 'ANG MO KIO:'
+
+Intercept of Regression 	: b =  [-826.71546606]
+Coefficients of Regression 	: a =  [[3.76279159e-15]]
+
+Linear regression for 'BEDOK:'
+
+Intercept of Regression 	: b =  [-488.07539052]
+Coefficients of Regression 	: a =  [[3.4094579e-15]]
+
+Linear regression for 'BISHAN:'
+
+Intercept of Regression 	: b =  [147.10019764]
+Coefficients of Regression 	: a =  [[3.78889188e-15]]
+
+Linear regression for 'BUKIT BATOK:'
+
+Intercept of Regression 	: b =  [-3952.60011303]
+Coefficients of Regression 	: a =  [[5.38588145e-15]]
+
+Linear regression for 'BUKIT MERAH:'
+
+Intercept of Regression 	: b =  [113.13546166]
+Coefficients of Regression 	: a =  [[4.17337896e-15]]
+
+Linear regression for 'BUKIT PANJANG:'
+
+Intercept of Regression 	: b =  [-4630.91382863]
+Coefficients of Regression 	: a =  [[5.81259968e-15]]
+
+Linear regression for 'BUKIT TIMAH:'
+
+Intercept of Regression 	: b =  [5777.56808088]
+Coefficients of Regression 	: a =  [[3.94769779e-16]]
+
+Linear regression for 'CENTRAL AREA:'
+
+Intercept of Regression 	: b =  [3437.85291229]
+Coefficients of Regression 	: a =  [[2.76365146e-15]]
+
+Linear regression for 'CHOA CHU KANG:'
+
+Intercept of Regression 	: b =  [-6089.58373546]
+Coefficients of Regression 	: a =  [[6.46421446e-15]]
+
+Linear regression for 'CLEMENTI:'
+
+Intercept of Regression 	: b =  [-4499.16558732]
+Coefficients of Regression 	: a =  [[6.57878479e-15]]
+
+Linear regression for 'GEYLANG:'
+
+Intercept of Regression 	: b =  [-887.29705935]
+Coefficients of Regression 	: a =  [[3.99687426e-15]]
+
+Linear regression for 'HOUGANG:'
+
+Intercept of Regression 	: b =  [-4300.20870329]
+Coefficients of Regression 	: a =  [[5.70171695e-15]]
+
+Linear regression for 'JURONG EAST:'
+
+Intercept of Regression 	: b =  [394.87088239]
+Coefficients of Regression 	: a =  [[2.64422184e-15]]
+
+Linear regression for 'JURONG WEST:'
+
+Intercept of Regression 	: b =  [-2097.97997635]
+Coefficients of Regression 	: a =  [[4.03977065e-15]]
+
+Linear regression for 'KALLANG/WHAMPOA:'
+
+Intercept of Regression 	: b =  [-2398.24693428]
+Coefficients of Regression 	: a =  [[5.38209353e-15]]
+
+Linear regression for 'MARINE PARADE:'
+
+Intercept of Regression 	: b =  [6031.67127212]
+Coefficients of Regression 	: a =  [[5.18160674e-17]]
+
+Linear regression for 'PASIR RIS:'
+
+Intercept of Regression 	: b =  [-5181.10797805]
+Coefficients of Regression 	: a =  [[6.13025651e-15]]
+
+Linear regression for 'PUNGGOL:'
+
+Intercept of Regression 	: b =  [-5503.34839186]
+Coefficients of Regression 	: a =  [[6.75712671e-15]]
+
+Linear regression for 'QUEENSTOWN:'
+
+Intercept of Regression 	: b =  [-2899.35698536]
+Coefficients of Regression 	: a =  [[6.32692916e-15]]
+
+Linear regression for 'SEMBAWANG:'
+
+Intercept of Regression 	: b =  [-6170.32430925]
+Coefficients of Regression 	: a =  [[6.64326196e-15]]
+
+Linear regression for 'SENGKANG:'
+
+Intercept of Regression 	: b =  [-3958.44097122]
+Coefficients of Regression 	: a =  [[5.58777825e-15]]
+
+Linear regression for 'SERANGOON:'
+
+Intercept of Regression 	: b =  [-853.23149706]
+Coefficients of Regression 	: a =  [[3.81571783e-15]]
+
+Linear regression for 'TAMPINES:'
+
+Intercept of Regression 	: b =  [-2963.4462405]
+Coefficients of Regression 	: a =  [[4.97067751e-15]]
+
+Linear regression for 'TOA PAYOH:'
+
+Intercept of Regression 	: b =  [-1072.05756568]
+Coefficients of Regression 	: a =  [[4.26780659e-15]]
+
+Linear regression for 'WOODLANDS:'
+
+Intercept of Regression 	: b =  [-4186.50248715]
+Coefficients of Regression 	: a =  [[5.23818757e-15]]
+
+Linear regression for 'YISHUN:'
+
+Intercept of Regression 	: b =  [-4246.15341257]
+Coefficients of Regression 	: a =  [[5.48533396e-15]]
+

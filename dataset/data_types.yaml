@@ -1,6 +1,7 @@
 # Dataset column data types
 data_types:
   month: datetime64[ns] # Format: 'YYYY-MM'
+  # month: datetime # Format: 'YYYY-MM'
   town: category
   flat_type: category
   block: string

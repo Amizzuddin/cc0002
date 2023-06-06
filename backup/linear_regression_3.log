@@ -1,0 +1,486 @@
+input parameters: [{'response': 'price_per_sqm', 'predictors': 'month', 'groupby_features': ['town'], 'observation_type': 'mean'}]
+response: price_per_sqm, predictors_feature: month, linear_regression_model_features: ['month', 'price_per_sqm', 'town'], groupby_features: ['town'], observation_type: mean
+type: <class 'pandas.core.frame.DataFrame'> vs content:
+          month         town         mean
+0    2015-01-01   ANG MO KIO  4860.644068
+1    2015-01-01        BEDOK  4682.033708
+2    2015-01-01       BISHAN  5594.360000
+3    2015-01-01  BUKIT BATOK  4326.278689
+4    2015-01-01  BUKIT MERAH  6706.693878
+...         ...          ...          ...
+2621 2023-05-01    SERANGOON  5966.111111
+2622 2023-05-01     TAMPINES  6007.542857
+2623 2023-05-01    TOA PAYOH  6483.200000
+2624 2023-05-01    WOODLANDS  5176.162791
+2625 2023-05-01       YISHUN  5442.081633
+
+[2626 rows x 3 columns]
+grouped_dataframed columns: Index(['month', 'town', 'mean'], dtype='object')
+Linear regression for 'ANG MO KIO:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month        town         mean  month_ordinal
+0    2015-01-01  ANG MO KIO  4860.644068         735599
+26   2015-02-01  ANG MO KIO  4817.446154         735630
+52   2015-03-01  ANG MO KIO  4778.285714         735658
+78   2015-04-01  ANG MO KIO  4811.795455         735689
+104  2015-05-01  ANG MO KIO  4808.783784         735719
+...         ...         ...          ...            ...
+2496 2023-01-01  ANG MO KIO  6413.758333         738521
+2522 2023-02-01  ANG MO KIO  6130.235294         738552
+2548 2023-03-01  ANG MO KIO  6273.081395         738580
+2574 2023-04-01  ANG MO KIO  6153.630137         738611
+2600 2023-05-01  ANG MO KIO  6412.393939         738641
+
+[101 rows x 4 columns]
+Linear regression for 'BEDOK:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month   town         mean  month_ordinal
+1    2015-01-01  BEDOK  4682.033708         735599
+27   2015-02-01  BEDOK  4666.140845         735630
+53   2015-03-01  BEDOK  4691.523364         735658
+79   2015-04-01  BEDOK  4679.811881         735689
+105  2015-05-01  BEDOK  4623.705263         735719
+...         ...    ...          ...            ...
+2497 2023-01-01  BEDOK  5634.705882         738521
+2523 2023-02-01  BEDOK  5677.009901         738552
+2549 2023-03-01  BEDOK  5793.744000         738580
+2575 2023-04-01  BEDOK  5918.963303         738611
+2601 2023-05-01  BEDOK  5636.648649         738641
+
+[101 rows x 4 columns]
+Linear regression for 'BISHAN:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month    town         mean  month_ordinal
+2    2015-01-01  BISHAN  5594.360000         735599
+28   2015-02-01  BISHAN  5669.380952         735630
+54   2015-03-01  BISHAN  5636.684211         735658
+80   2015-04-01  BISHAN  5799.892857         735689
+106  2015-05-01  BISHAN  5494.125000         735719
+...         ...     ...          ...            ...
+2498 2023-01-01  BISHAN  6939.032258         738521
+2524 2023-02-01  BISHAN  6978.363636         738552
+2550 2023-03-01  BISHAN  7183.974359         738580
+2576 2023-04-01  BISHAN  7190.029412         738611
+2602 2023-05-01  BISHAN  6890.600000         738641
+
+[101 rows x 4 columns]
+Linear regression for 'BUKIT BATOK:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month         town         mean  month_ordinal
+3    2015-01-01  BUKIT BATOK  4326.278689         735599
+29   2015-02-01  BUKIT BATOK  4289.490196         735630
+55   2015-03-01  BUKIT BATOK  4311.485714         735658
+81   2015-04-01  BUKIT BATOK  4249.416667         735689
+107  2015-05-01  BUKIT BATOK  4258.557143         735719
+...         ...          ...          ...            ...
+2499 2023-01-01  BUKIT BATOK  6117.581818         738521
+2525 2023-02-01  BUKIT BATOK  6217.413333         738552
+2551 2023-03-01  BUKIT BATOK  6257.513274         738580
+2577 2023-04-01  BUKIT BATOK  6230.741007         738611
+2603 2023-05-01  BUKIT BATOK  6029.880952         738641
+
+[101 rows x 4 columns]
+Linear regression for 'BUKIT MERAH:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month         town         mean  month_ordinal
+4    2015-01-01  BUKIT MERAH  6706.693878         735599
+30   2015-02-01  BUKIT MERAH  6285.742857         735630
+56   2015-03-01  BUKIT MERAH  5926.395833         735658
+82   2015-04-01  BUKIT MERAH  6257.779412         735689
+108  2015-05-01  BUKIT MERAH  6708.720000         735719
+...         ...          ...          ...            ...
+2500 2023-01-01  BUKIT MERAH  7901.174757         738521
+2526 2023-02-01  BUKIT MERAH  7496.807018         738552
+2552 2023-03-01  BUKIT MERAH  7918.623377         738580
+2578 2023-04-01  BUKIT MERAH  7912.825581         738611
+2604 2023-05-01  BUKIT MERAH  7787.043478         738641
+
+[101 rows x 4 columns]
+Linear regression for 'BUKIT PANJANG:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month           town         mean  month_ordinal
+5    2015-01-01  BUKIT PANJANG  4118.700000         735599
+31   2015-02-01  BUKIT PANJANG  3896.650000         735630
+57   2015-03-01  BUKIT PANJANG  3943.634146         735658
+83   2015-04-01  BUKIT PANJANG  4029.866667         735689
+109  2015-05-01  BUKIT PANJANG  3849.132353         735719
+...         ...            ...          ...            ...
+2501 2023-01-01  BUKIT PANJANG  5499.606557         738521
+2527 2023-02-01  BUKIT PANJANG  5365.409091         738552
+2553 2023-03-01  BUKIT PANJANG  5423.707692         738580
+2579 2023-04-01  BUKIT PANJANG  5376.038462         738611
+2605 2023-05-01  BUKIT PANJANG  5685.047619         738641
+
+[101 rows x 4 columns]
+Linear regression for 'BUKIT TIMAH:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month         town         mean  month_ordinal
+6    2015-01-01  BUKIT TIMAH  6797.000000         735599
+32   2015-02-01  BUKIT TIMAH  6540.500000         735630
+58   2015-03-01  BUKIT TIMAH  6045.000000         735658
+84   2015-04-01  BUKIT TIMAH  6406.000000         735689
+110  2015-05-01  BUKIT TIMAH  6650.857143         735719
+...         ...          ...          ...            ...
+2502 2023-01-01  BUKIT TIMAH  7294.250000         738521
+2528 2023-02-01  BUKIT TIMAH  6969.500000         738552
+2554 2023-03-01  BUKIT TIMAH  7409.500000         738580
+2580 2023-04-01  BUKIT TIMAH  7210.500000         738611
+2606 2023-05-01  BUKIT TIMAH          NaN         738641
+
+[101 rows x 4 columns]
+Linear regression for 'CENTRAL AREA:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month          town          mean  month_ordinal
+7    2015-01-01  CENTRAL AREA   8358.466667         735599
+33   2015-02-01  CENTRAL AREA   8791.136364         735630
+59   2015-03-01  CENTRAL AREA   8230.250000         735658
+85   2015-04-01  CENTRAL AREA   8275.058824         735689
+111  2015-05-01  CENTRAL AREA   8339.687500         735719
+...         ...           ...           ...            ...
+2503 2023-01-01  CENTRAL AREA   8361.571429         738521
+2529 2023-02-01  CENTRAL AREA   8318.944444         738552
+2555 2023-03-01  CENTRAL AREA   8705.238095         738580
+2581 2023-04-01  CENTRAL AREA   9549.923077         738611
+2607 2023-05-01  CENTRAL AREA  12957.000000         738641
+
+[101 rows x 4 columns]
+Linear regression for 'CHOA CHU KANG:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month           town         mean  month_ordinal
+8    2015-01-01  CHOA CHU KANG  3715.379310         735599
+34   2015-02-01  CHOA CHU KANG  3693.386364         735630
+60   2015-03-01  CHOA CHU KANG  3755.281250         735658
+86   2015-04-01  CHOA CHU KANG  3634.191176         735689
+112  2015-05-01  CHOA CHU KANG  3583.200000         735719
+...         ...            ...          ...            ...
+2504 2023-01-01  CHOA CHU KANG  5101.311475         738521
+2530 2023-02-01  CHOA CHU KANG  5087.853933         738552
+2556 2023-03-01  CHOA CHU KANG  4944.950495         738580
+2582 2023-04-01  CHOA CHU KANG  5014.020833         738611
+2608 2023-05-01  CHOA CHU KANG  5265.606061         738641
+
+[101 rows x 4 columns]
+Linear regression for 'CLEMENTI:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month      town         mean  month_ordinal
+9    2015-01-01  CLEMENTI  5014.500000         735599
+35   2015-02-01  CLEMENTI  5394.370370         735630
+61   2015-03-01  CLEMENTI  5114.866667         735658
+87   2015-04-01  CLEMENTI  5290.698113         735689
+113  2015-05-01  CLEMENTI  5237.214286         735719
+...         ...       ...          ...            ...
+2505 2023-01-01  CLEMENTI  6792.430556         738521
+2531 2023-02-01  CLEMENTI  6386.522727         738552
+2557 2023-03-01  CLEMENTI  6983.062500         738580
+2583 2023-04-01  CLEMENTI  6833.302326         738611
+2609 2023-05-01  CLEMENTI  7498.555556         738641
+
+[101 rows x 4 columns]
+Linear regression for 'GEYLANG:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month     town         mean  month_ordinal
+10   2015-01-01  GEYLANG  5232.885714         735599
+36   2015-02-01  GEYLANG  4965.793103         735630
+62   2015-03-01  GEYLANG  5241.785714         735658
+88   2015-04-01  GEYLANG  4880.568627         735689
+114  2015-05-01  GEYLANG  5374.621622         735719
+...         ...      ...          ...            ...
+2506 2023-01-01  GEYLANG  6044.579710         738521
+2532 2023-02-01  GEYLANG  6148.521739         738552
+2558 2023-03-01  GEYLANG  6196.313433         738580
+2584 2023-04-01  GEYLANG  6356.127660         738611
+2610 2023-05-01  GEYLANG  6880.384615         738641
+
+[101 rows x 4 columns]
+Linear regression for 'HOUGANG:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month     town         mean  month_ordinal
+11   2015-01-01  HOUGANG  4324.016129         735599
+37   2015-02-01  HOUGANG  4384.107692         735630
+63   2015-03-01  HOUGANG  4247.704918         735658
+89   2015-04-01  HOUGANG  4313.819149         735689
+115  2015-05-01  HOUGANG  4294.521277         735719
+...         ...      ...          ...            ...
+2507 2023-01-01  HOUGANG  5702.047619         738521
+2533 2023-02-01  HOUGANG  5594.432990         738552
+2559 2023-03-01  HOUGANG  5662.965812         738580
+2585 2023-04-01  HOUGANG  5698.344086         738611
+2611 2023-05-01  HOUGANG  5689.935484         738641
+
+[101 rows x 4 columns]
+Linear regression for 'JURONG EAST:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month         town         mean  month_ordinal
+12   2015-01-01  JURONG EAST  4513.307692         735599
+38   2015-02-01  JURONG EAST  4362.444444         735630
+64   2015-03-01  JURONG EAST  4341.666667         735658
+90   2015-04-01  JURONG EAST  4390.827586         735689
+116  2015-05-01  JURONG EAST  4542.187500         735719
+...         ...          ...          ...            ...
+2508 2023-01-01  JURONG EAST  5147.155556         738521
+2534 2023-02-01  JURONG EAST  5317.473684         738552
+2560 2023-03-01  JURONG EAST  5215.666667         738580
+2586 2023-04-01  JURONG EAST  5122.717949         738611
+2612 2023-05-01  JURONG EAST  5203.800000         738641
+
+[101 rows x 4 columns]
+Linear regression for 'JURONG WEST:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month         town         mean  month_ordinal
+13   2015-01-01  JURONG WEST  4016.317308         735599
+39   2015-02-01  JURONG WEST  4016.270833         735630
+65   2015-03-01  JURONG WEST  3995.257732         735658
+91   2015-04-01  JURONG WEST  3962.702128         735689
+117  2015-05-01  JURONG WEST  4038.195122         735719
+...         ...          ...          ...            ...
+2509 2023-01-01  JURONG WEST  5153.025974         738521
+2535 2023-02-01  JURONG WEST  4953.596154         738552
+2561 2023-03-01  JURONG WEST  5107.561983         738580
+2587 2023-04-01  JURONG WEST  5150.884615         738611
+2613 2023-05-01  JURONG WEST  5242.517241         738641
+
+[101 rows x 4 columns]
+Linear regression for 'KALLANG/WHAMPOA:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month             town         mean  month_ordinal
+14   2015-01-01  KALLANG/WHAMPOA  5595.047619         735599
+40   2015-02-01  KALLANG/WHAMPOA  5469.437500         735630
+66   2015-03-01  KALLANG/WHAMPOA  5694.000000         735658
+92   2015-04-01  KALLANG/WHAMPOA  5525.907407         735689
+118  2015-05-01  KALLANG/WHAMPOA  5489.000000         735719
+...         ...              ...          ...            ...
+2510 2023-01-01  KALLANG/WHAMPOA  7101.177778         738521
+2536 2023-02-01  KALLANG/WHAMPOA  7089.830508         738552
+2562 2023-03-01  KALLANG/WHAMPOA  7202.357143         738580
+2588 2023-04-01  KALLANG/WHAMPOA  6976.771084         738611
+2614 2023-05-01  KALLANG/WHAMPOA  7376.136364         738641
+
+[101 rows x 4 columns]
+Linear regression for 'MARINE PARADE:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month           town         mean  month_ordinal
+15   2015-01-01  MARINE PARADE  6668.666667         735599
+41   2015-02-01  MARINE PARADE  6442.857143         735630
+67   2015-03-01  MARINE PARADE  6067.583333         735658
+93   2015-04-01  MARINE PARADE  6198.727273         735689
+119  2015-05-01  MARINE PARADE  6334.222222         735719
+...         ...            ...          ...            ...
+2511 2023-01-01  MARINE PARADE  6765.647059         738521
+2537 2023-02-01  MARINE PARADE  6338.666667         738552
+2563 2023-03-01  MARINE PARADE  6591.375000         738580
+2589 2023-04-01  MARINE PARADE  6551.916667         738611
+2615 2023-05-01  MARINE PARADE  7322.750000         738641
+
+[101 rows x 4 columns]
+Linear regression for 'PASIR RIS:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month       town         mean  month_ordinal
+16   2015-01-01  PASIR RIS  3957.901961         735599
+42   2015-02-01  PASIR RIS  3853.171429         735630
+68   2015-03-01  PASIR RIS  3917.122449         735658
+94   2015-04-01  PASIR RIS  3887.395349         735689
+120  2015-05-01  PASIR RIS  3910.415385         735719
+...         ...        ...          ...            ...
+2512 2023-01-01  PASIR RIS  5249.528571         738521
+2538 2023-02-01  PASIR RIS  5335.486486         738552
+2564 2023-03-01  PASIR RIS  5318.533333         738580
+2590 2023-04-01  PASIR RIS  5596.148148         738611
+2616 2023-05-01  PASIR RIS  5072.000000         738641
+
+[101 rows x 4 columns]
+Linear regression for 'PUNGGOL:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month     town         mean  month_ordinal
+17   2015-01-01  PUNGGOL  4553.750000         735599
+43   2015-02-01  PUNGGOL  4346.415094         735630
+69   2015-03-01  PUNGGOL  4433.654545         735658
+95   2015-04-01  PUNGGOL  4376.382979         735689
+121  2015-05-01  PUNGGOL  4247.895833         735719
+...         ...      ...          ...            ...
+2513 2023-01-01  PUNGGOL  6298.435000         738521
+2539 2023-02-01  PUNGGOL  6211.325153         738552
+2565 2023-03-01  PUNGGOL  6309.106383         738580
+2591 2023-04-01  PUNGGOL  6355.898396         738611
+2617 2023-05-01  PUNGGOL  6422.280000         738641
+
+[101 rows x 4 columns]
+Linear regression for 'QUEENSTOWN:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month        town         mean  month_ordinal
+18   2015-01-01  QUEENSTOWN  6436.735294         735599
+44   2015-02-01  QUEENSTOWN  6524.341463         735630
+70   2015-03-01  QUEENSTOWN  6362.914286         735658
+96   2015-04-01  QUEENSTOWN  6515.307692         735689
+122  2015-05-01  QUEENSTOWN  6397.800000         735719
+...         ...         ...          ...            ...
+2514 2023-01-01  QUEENSTOWN  7970.821429         738521
+2540 2023-02-01  QUEENSTOWN  7943.780488         738552
+2566 2023-03-01  QUEENSTOWN  8105.441176         738580
+2592 2023-04-01  QUEENSTOWN  8056.540000         738611
+2618 2023-05-01  QUEENSTOWN  8905.333333         738641
+
+[101 rows x 4 columns]
+Linear regression for 'SEMBAWANG:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month       town         mean  month_ordinal
+19   2015-01-01  SEMBAWANG  3920.750000         735599
+45   2015-02-01  SEMBAWANG  3816.704545         735630
+71   2015-03-01  SEMBAWANG  3863.648649         735658
+97   2015-04-01  SEMBAWANG  3775.894737         735689
+123  2015-05-01  SEMBAWANG  3824.377778         735719
+...         ...        ...          ...            ...
+2515 2023-01-01  SEMBAWANG  5761.521739         738521
+2541 2023-02-01  SEMBAWANG  5823.466667         738552
+2567 2023-03-01  SEMBAWANG  5704.481013         738580
+2593 2023-04-01  SEMBAWANG  5871.733333         738611
+2619 2023-05-01  SEMBAWANG  5901.068966         738641
+
+[101 rows x 4 columns]
+Linear regression for 'SENGKANG:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month      town         mean  month_ordinal
+20   2015-01-01  SENGKANG  4456.440000         735599
+46   2015-02-01  SENGKANG  4469.112676         735630
+72   2015-03-01  SENGKANG  4479.482353         735658
+98   2015-04-01  SENGKANG  4300.245283         735689
+124  2015-05-01  SENGKANG  4407.421053         735719
+...         ...       ...          ...            ...
+2516 2023-01-01  SENGKANG  5914.891720         738521
+2542 2023-02-01  SENGKANG  5802.349593         738552
+2568 2023-03-01  SENGKANG  5955.717949         738580
+2594 2023-04-01  SENGKANG  6091.067039         738611
+2620 2023-05-01  SENGKANG  5756.680851         738641
+
+[101 rows x 4 columns]
+Linear regression for 'SERANGOON:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month       town         mean  month_ordinal
+21   2015-01-01  SERANGOON  4922.421053         735599
+47   2015-02-01  SERANGOON  4694.578947         735630
+73   2015-03-01  SERANGOON  4935.189189         735658
+99   2015-04-01  SERANGOON  5085.846154         735689
+125  2015-05-01  SERANGOON  4604.062500         735719
+...         ...        ...          ...            ...
+2517 2023-01-01  SERANGOON  5975.311111         738521
+2543 2023-02-01  SERANGOON  6141.647059         738552
+2569 2023-03-01  SERANGOON  6116.785714         738580
+2595 2023-04-01  SERANGOON  5881.750000         738611
+2621 2023-05-01  SERANGOON  5966.111111         738641
+
+[101 rows x 4 columns]
+Linear regression for 'TAMPINES:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month      town         mean  month_ordinal
+22   2015-01-01  TAMPINES  4484.461538         735599
+48   2015-02-01  TAMPINES  4415.086957         735630
+74   2015-03-01  TAMPINES  4314.113208         735658
+100  2015-04-01  TAMPINES  4487.190476         735689
+126  2015-05-01  TAMPINES  4366.653226         735719
+...         ...       ...          ...            ...
+2518 2023-01-01  TAMPINES  5705.153846         738521
+2544 2023-02-01  TAMPINES  5630.461538         738552
+2570 2023-03-01  TAMPINES  5856.130178         738580
+2596 2023-04-01  TAMPINES  5819.418605         738611
+2622 2023-05-01  TAMPINES  6007.542857         738641
+
+[101 rows x 4 columns]
+Linear regression for 'TOA PAYOH:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month       town         mean  month_ordinal
+23   2015-01-01  TOA PAYOH  5109.757576         735599
+49   2015-02-01  TOA PAYOH  5458.730769         735630
+75   2015-03-01  TOA PAYOH  5490.777778         735658
+101  2015-04-01  TOA PAYOH  5197.090909         735689
+127  2015-05-01  TOA PAYOH  5338.653846         735719
+...         ...        ...          ...            ...
+2519 2023-01-01  TOA PAYOH  6845.619048         738521
+2545 2023-02-01  TOA PAYOH  6637.621212         738552
+2571 2023-03-01  TOA PAYOH  6791.640000         738580
+2597 2023-04-01  TOA PAYOH  6889.753846         738611
+2623 2023-05-01  TOA PAYOH  6483.200000         738641
+
+[101 rows x 4 columns]
+Linear regression for 'WOODLANDS:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month       town         mean  month_ordinal
+24   2015-01-01  WOODLANDS  3736.785714         735599
+50   2015-02-01  WOODLANDS  3709.228571         735630
+76   2015-03-01  WOODLANDS  3716.750000         735658
+102  2015-04-01  WOODLANDS  3733.112150         735689
+128  2015-05-01  WOODLANDS  3708.885417         735719
+...         ...        ...          ...            ...
+2520 2023-01-01  WOODLANDS  5207.798283         738521
+2546 2023-02-01  WOODLANDS  5169.090909         738552
+2572 2023-03-01  WOODLANDS  5294.744318         738580
+2598 2023-04-01  WOODLANDS  5165.859551         738611
+2624 2023-05-01  WOODLANDS  5176.162791         738641
+
+[101 rows x 4 columns]
+Linear regression for 'YISHUN:'
+
+[ORDINAL UPDATE] predictor_dataframe type: <class 'pandas.core.frame.DataFrame'>,
+predictor_dataframe:
+          month    town         mean  month_ordinal
+25   2015-01-01  YISHUN  3970.514286         735599
+51   2015-02-01  YISHUN  3994.803030         735630
+77   2015-03-01  YISHUN  3939.540230         735658
+103  2015-04-01  YISHUN  3972.009434         735689
+129  2015-05-01  YISHUN  3912.355769         735719
+...         ...     ...          ...            ...
+2521 2023-01-01  YISHUN  5398.440191         738521
+2547 2023-02-01  YISHUN  5538.413333         738552
+2573 2023-03-01  YISHUN  5370.917722         738580
+2599 2023-04-01  YISHUN  5480.950920         738611
+2625 2023-05-01  YISHUN  5442.081633         738641
+
+[101 rows x 4 columns]

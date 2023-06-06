@@ -5,6 +5,7 @@ load_dataset_parameters:
     - resale-flat-prices-based-on-registration-date-from-jan-2015-to-dec-2016
 
 
+# Original
 cleanup_parameters:
   include_features:
     - month
@@ -21,6 +22,53 @@ cleanup_parameters:
   morph_feature_type:
     remaining_lease: int64 # mixed of string and int type
   
+  custom_numerical_features:
+    - price_per_sqm: 
+        derived_features:
+          - resale_price
+          - floor_area_sqm
+          # - remaining_lease
+        action_type: division
+        data_type: int
+
+
+# First
+cleanup_parameters_first:
+  include_features:
+    - month
+    - town
+    - flat_type
+    - storey_range
+    - floor_area_sqm
+    - flat_model
+    - remaining_lease
+    - resale_price
+  
+  # remaining_lease has 2 format which are 'YY years XX months' or 'XX' years
+  # will focus on years instead
+  morph_feature_type:
+    remaining_lease: int64 # mixed of string and int type
+  
+  custom_numerical_features: []
+
+
+# After
+cleanup_parameters_second:
+  include_features: 
+    - month
+    - town
+    - flat_type
+    - storey_range
+    - floor_area_sqm
+    - flat_model
+    - remaining_lease
+    - resale_price
+
+  # remaining_lease has 2 format which are 'YY years XX months' or 'XX' years
+  # will focus on years instead
+  morph_feature_type: 
+    remaining_lease: int64 # mixed of string and int type
+
   custom_numerical_features:
     - price_per_sqm: 
         derived_features:

@@ -1,0 +1,133 @@
+input parameters: [{'response': 'price_per_sqm', 'predictors': 'month', 'groupby_features': ['town'], 'observation_type': 'mean'}]
+response: price_per_sqm, predictors_feature: month, linear_regression_model_features: ['month', 'price_per_sqm', 'town'], groupby_features: ['town'], observation_type: mean
+grouped_dataframed columns: Index(['month', 'town', 'mean'], dtype='object')
+Linear regression for 'ANG MO KIO:'
+
+Intercept of Regression 	: b =  [-234630.34143948]
+Coefficients of Regression 	: a =  [[0.32510519]]
+
+Linear regression for 'BEDOK:'
+
+Intercept of Regression 	: b =  [-212337.07161573]
+Coefficients of Regression 	: a =  [[0.29457716]]
+
+Linear regression for 'BISHAN:'
+
+Intercept of Regression 	: b =  [-235278.28529919]
+Coefficients of Regression 	: a =  [[0.32736026]]
+
+Linear regression for 'BUKIT BATOK:'
+
+Intercept of Regression 	: b =  [-338608.02359792]
+Coefficients of Regression 	: a =  [[0.46534016]]
+
+Linear regression for 'BUKIT MERAH:'
+
+Intercept of Regression 	: b =  [-259202.61723503]
+Coefficients of Regression 	: a =  [[0.36057994]]
+
+Linear regression for 'BUKIT PANJANG:'
+
+Intercept of Regression 	: b =  [-365800.76624737]
+Coefficients of Regression 	: a =  [[0.50220861]]
+
+Linear regression for 'BUKIT TIMAH:'
+
+Intercept of Regression 	: b =  [-18751.72185045]
+Coefficients of Regression 	: a =  [[0.03410811]]
+
+Linear regression for 'CENTRAL AREA:'
+
+Intercept of Regression 	: b =  [-168283.51862951]
+Coefficients of Regression 	: a =  [[0.23877949]]
+
+Linear regression for 'CHOA CHU KANG:'
+
+Intercept of Regression 	: b =  [-407747.96548754]
+Coefficients of Regression 	: a =  [[0.55850813]]
+
+Linear regression for 'CLEMENTI:'
+
+Intercept of Regression 	: b =  [-413276.4530023]
+Coefficients of Regression 	: a =  [[0.56840701]]
+
+Linear regression for 'GEYLANG:'
+
+Intercept of Regression 	: b =  [-249235.80996406]
+Coefficients of Regression 	: a =  [[0.34532994]]
+
+Linear regression for 'HOUGANG:'
+
+Intercept of Regression 	: b =  [-358580.28682193]
+Coefficients of Regression 	: a =  [[0.49262834]]
+
+Linear regression for 'JURONG EAST:'
+
+Intercept of Regression 	: b =  [-163905.65943896]
+Coefficients of Regression 	: a =  [[0.22846077]]
+
+Linear regression for 'JURONG WEST:'
+
+Intercept of Regression 	: b =  [-253111.88938943]
+Coefficients of Regression 	: a =  [[0.34903618]]
+
+Linear regression for 'KALLANG/WHAMPOA:'
+
+Intercept of Regression 	: b =  [-336818.30556018]
+Coefficients of Regression 	: a =  [[0.46501288]]
+
+Linear regression for 'MARINE PARADE:'
+
+Intercept of Regression 	: b =  [2812.04452045]
+Coefficients of Regression 	: a =  [[0.00447691]]
+
+Linear regression for 'PASIR RIS:'
+
+Intercept of Regression 	: b =  [-386088.78417541]
+Coefficients of Regression 	: a =  [[0.52965416]]
+
+Linear regression for 'PUNGGOL:'
+
+Intercept of Regression 	: b =  [-425362.03291908]
+Coefficients of Regression 	: a =  [[0.58381575]]
+
+Linear regression for 'QUEENSTOWN:'
+
+Intercept of Regression 	: b =  [-396027.42281906]
+Coefficients of Regression 	: a =  [[0.54664668]]
+
+Linear regression for 'SEMBAWANG:'
+
+Intercept of Regression 	: b =  [-418953.94501412]
+Coefficients of Regression 	: a =  [[0.57397783]]
+
+Linear regression for 'SENGKANG:'
+
+Intercept of Regression 	: b =  [-351158.86011632]
+Coefficients of Regression 	: a =  [[0.48278404]]
+
+Linear regression for 'SERANGOON:'
+
+Intercept of Regression 	: b =  [-237945.46583717]
+Coefficients of Regression 	: a =  [[0.32967802]]
+
+Linear regression for 'TAMPINES:'
+
+Intercept of Regression 	: b =  [-311819.88900286]
+Coefficients of Regression 	: a =  [[0.42946654]]
+
+Linear regression for 'TOA PAYOH:'
+
+Intercept of Regression 	: b =  [-266255.13561016]
+Coefficients of Regression 	: a =  [[0.36873849]]
+
+Linear regression for 'WOODLANDS:'
+
+Intercept of Regression 	: b =  [-329664.86568973]
+Coefficients of Regression 	: a =  [[0.45257941]]
+
+Linear regression for 'YISHUN:'
+
+Intercept of Regression 	: b =  [-345081.12676808]
+Coefficients of Regression 	: a =  [[0.47393285]]
+
